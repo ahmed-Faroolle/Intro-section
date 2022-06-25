@@ -93,14 +93,6 @@ ul{
     padding: .6rem 1.2rem;
     transform: all .5s;
     border-radius: 14px;
-    -webkit-border-radius:;
-    -moz-border-radius:;
-    -ms-border-radius:;
-    -o-border-radius:;
-    -webkit-transform:;
-    -moz-transform:;
-    -ms-transform:;
-    -o-transform:;
 }
 
 .btn__list + .btn__list{
@@ -189,7 +181,6 @@ ul{
 .hero__text{
     width: 100%;
     padding: 30px 0;
-    /* background-color: green; */
 }
 
 .hero__text h1{
@@ -209,8 +200,7 @@ ul{
     align-items: flex-end;
     cursor: pointer;
     transition: all .5s;
-    /*background-color: yellow;
-    */-webkit-transition: all .5s;
+    -webkit-transition: all .5s;
     -moz-transition: all .5s;
     -ms-transition: all .5s;
     -o-transition: all .5s;
@@ -259,20 +249,12 @@ ul{
     height: 100%;
     z-index: 10;
     transition: all .5s;
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    -ms-transition: all .5s;
-    -o-transition: all .5s;
 }
 
 .hidden{
     visibility: hidden;
     opacity: 0;
     transform: translateX(200px);
-    -webkit-transform: translateX(200px);
-    -moz-transform: translateX(200px);
-    -ms-transform: translateX(200px);
-    -o-transform: translateX(200px);
 }
 
 /* .hidden__menu{
@@ -283,8 +265,51 @@ ul{
     display: none;
 }
 
+a.hero__btn{
+    background-color: var(--almost--black);
+    color: var(--almost--white);
+    padding: 1rem 2rem;
+}
+
+.clients_icons{
+    max-width: 20%;
+    flex: 20%;
+}
+.clients_icons svg{
+    width: auto;
+    height: auto;
+}
+
 /* breakpoint one */
 @media screen and (max-width: 795px){
+    .hero__content{
+        flex: 100%;
+        max-width: 100%;
+    }
+    .hero__text{
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero__text h1{
+        display: block;
+        text-align: center;
+        font-size: calc(2.4rem + 1vw);
+        margin: 0;
+    }
+    
+    .hero__text p{
+        display: block;
+        text-align: center;
+        font-size: calc(0.8rem + 1vw);
+        line-height: calc(1.5 * (0.8rem + 1vw));
+        margin: 20px 0;
+    }
+
+    .hero__text{
+        text-align: center;
+    }
     .hero__sec{
         width: 100%;
         flex-direction: column-reverse;
@@ -309,7 +334,14 @@ ul{
 }
 
 @media screen and (max-width: 640px){
+    .hero{
+        padding: 5% 20px;
+    }
 
+
+    .hero__clients{
+        padding: 0 0px;
+    }
     .mobile__menu{
         background-color: var(--almost--white);
         display: flex;
@@ -322,10 +354,6 @@ ul{
         top: 0;
         transition: all .2s linear;
         z-index: 100;
-        -webkit-transition:;
-        -moz-transition:;
-        -ms-transition:;
-        -o-transition:;
 }
 
     .close__btn{
@@ -381,32 +409,18 @@ ul{
         display:block;
     }
 
-    .desktop__hero__text{
-        display: none;
-    }
-
-    h1.mobile__hero__text{
+    /* .hero__text h1{
         display: block;
         text-align: center;
         font-size: calc(2.4rem + 1vw);
     }
-    
-    p.mobile__hero__text{
-        display: block;
-        text-align: center;
-        font-size: calc(0.4rem + 1vw);
-        line-height: calc(1.5 * (0.4rem + 1vw));
-        margin: 20px 0;
-    }
+
 
     .hero__text{
         text-align: center;
-    }
+    } */
 
-    a.hero__btn{
-        background-color: var(--almost--black);
-        color: var(--almost--white);
-    }
+
 
     .menu__list__item{
         padding: 16px 0;
@@ -443,8 +457,16 @@ ul{
 }
 
 @media screen and (max-width: 418px){
-    h1.mobile__hero__text{
+    .hero__text h1{
         font-size: calc(1.8rem + 1vw);
+    }
+
+    .hero__text p{
+        display: block;
+        text-align: center;
+        font-size: calc(0.8ch + 1vw);
+        line-height: calc(1.5 * (0.6rem + 1vw));
+        margin: 20px 0;
     }
 
     .hero__clients{
