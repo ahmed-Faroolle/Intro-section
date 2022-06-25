@@ -26,10 +26,10 @@ Users should be able to:
 ### Screenshot
 
 #### Desktop
-![](./screenshots/desktop%20screenshot.png)
+![](./screenshots/desktop.png)
 
 #### Mobile
-![](./screenshots/mobile%20screenshot.png)
+![](./screenshots/mobile.png)
 ### Links
 
 - Live Site URL: [imfaroolle Intro section](https://imfaroolle-Intro-section.netlify.app/)
