@@ -470,7 +470,7 @@ a.hero__btn:hover{
     .hero__text p{
         display: block;
         text-align: center;
-        font-size: calc(0.8ch + 1vw);
+        font-size: calc(0.6rem + 1vw);
         line-height: calc(1.5 * (0.6rem + 1vw));
         margin: 20px 0;
     }
