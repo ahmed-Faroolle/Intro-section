@@ -271,6 +271,12 @@ a.hero__btn{
     padding: 1rem 2rem;
 }
 
+a.hero__btn:hover{
+    background-color: transparent;
+    border: 2px solid var(--almost--black);
+    color: var(--almost--black);
+}
+
 .clients_icons{
     max-width: 20%;
     flex: 20%;
