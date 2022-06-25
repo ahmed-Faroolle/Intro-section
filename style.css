@@ -97,10 +97,10 @@ ul{
     -moz-border-radius:;
     -ms-border-radius:;
     -o-border-radius:;
-    -webkit-transform: all .5s;
-    -moz-transform: all .5s;
-    -ms-transform: all .5s;
-    -o-transform: all .5s;
+    -webkit-transform:;
+    -moz-transform:;
+    -ms-transform:;
+    -o-transform:;
 }
 
 .btn__list + .btn__list{
@@ -252,7 +252,7 @@ ul{
     position: fixed;
     top: 0;
     left: 0;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.5);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     width: 100%;
